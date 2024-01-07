@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BallotFragment">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="651dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="20dp"
+            android:onClick="candidateBack"
+            android:src="@drawable/back_arrow_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/steelblue"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:text="Ballot"
+            android:textSize="22dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/imageView3"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="680dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Race 1: President -->
+
+
+                <TextView
+                    android:id="@+id/race1_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:text="Race 1: President"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/candidate4_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidate4_party"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate4_name"
+                        android:text="Party: Independent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/candidate4_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate4_party"
+                        android:text="John Doe is a dedicated advocate for education reform and economic development. He promises to prioritize healthcare and protect the environment."
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/candidate4_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate4_description"
+                        android:text="Vote" />
+
+                    <RatingBar
+                        android:id="@+id/candidate4_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate4_checkbox"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/candidate5_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidate5_party"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate5_name"
+                        android:text="Party: Independent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/candidate5_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate5_party"
+                        android:text="John Doe is a dedicated advocate for education reform and economic development. He promises to prioritize healthcare and protect the environment."
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/candidate5_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate5_description"
+                        android:text="Vote" />
+
+                    <RatingBar
+                        android:id="@+id/candidate5_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate5_checkbox"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/candidate3_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidate3_party"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate3_name"
+                        android:text="Party: Independent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/candidate3_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate3_party"
+                        android:text="John Doe is a dedicated advocate for education reform and economic development. He promises to prioritize healthcare and protect the environment."
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/candidate3_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate3_description"
+                        android:text="Vote" />
+
+                    <RatingBar
+                        android:id="@+id/candidate3_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate3_checkbox"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </RelativeLayout>
+
+                <!-- Candidate 1 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/candidate1_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="John Doe"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidate1_party"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate1_name"
+                        android:text="Party: Independent"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/candidate1_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate1_party"
+                        android:text="John Doe is a dedicated advocate for education reform and economic development. He promises to prioritize healthcare and protect the environment."
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/candidate1_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate1_description"
+                        android:text="Vote" />
+
+                    <RatingBar
+                        android:id="@+id/candidate1_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate1_checkbox"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </RelativeLayout>
+
+                <!-- Candidate 2 -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/candidate2_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Jane Smith"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/candidate2_party"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate2_name"
+                        android:text="Party: Democratic"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/candidate2_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate2_party"
+                        android:text="Jane Smith is a seasoned politician with a focus on social justice and equality. She aims to improve healthcare accessibility and support small businesses."
+                        android:textSize="14sp" />
+
+                    <CheckBox
+                        android:id="@+id/candidate2_checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate2_description"
+                        android:text="Vote" />
+
+                    <RatingBar
+                        android:id="@+id/candidate2_rating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/candidate2_checkbox"
+                        android:numStars="5"
+                        android:rating="0"
+                        android:stepSize="1" />
+
+                </RelativeLayout>
+
+                <!-- Race 2: Senate -->
+                <!-- Candidate 3 -->
+                <!-- Candidate 4 -->
+                <!-- Candidate 5 -->
+
+                <!-- Race 3: Governor -->
+                <!-- Candidate 6 -->
+                <!-- Candidate 7 -->
+                <!-- Candidate 8 -->
+
+                <!-- Submit Button -->
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:text="Submit"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="1.0" />
+
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:id="@+id/scrollView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="vertical">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_weight="0">
+
+                        <ImageView
+                            android:id="@+id/imageView2"
+                            android:layout_width="31dp"
+                            android:layout_height="28dp"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="24dp"
+                            android:src="@android:drawable/ic_menu_search"
+                            app:layout_constraintBottom_toBottomOf="@+id/icon_logo"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/icon_logo"
+                            app:layout_constraintVertical_bias="1.0" />
+
+                        <ImageView
+                            android:id="@+id/icon_logo"
+                            android:layout_width="42dp"
+                            android:layout_height="41dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"
+                            android:background="@drawable/vote_logo"
+
+                            android:onClick="Welcome"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="89dp"
+                            android:layout_height="27dp"
+                            android:minHeight="48dp"
+                            android:text="VoteNow"
+                            android:textSize="16dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/icon_logo"
+                            app:layout_constraintStart_toEndOf="@+id/icon_logo"
+                            app:layout_constraintTop_toTopOf="@+id/icon_logo"
+                            app:layout_constraintVertical_bias="1.0" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/constraintLayout3">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <!-- Header -->
+                <TextView
+                    android:id="@+id/title_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="16dp"
+                    android:text="Welcome to E-Voting App"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+                <!-- Feature 1 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/feature1_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Introducing Secure and Convenient Voting"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/feature1_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/obama_pic" />
+
+                    <TextView
+                        android:id="@+id/feature1_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our E-Voting app brings you a secure and convenient way to cast your votes. Say goodbye to long queues and paper ballots. With just a few taps, you can participate in elections from the comfort of your own home. Your vote is encrypted and secure, ensuring the integrity of the democratic process."
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Feature 2 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/feature2_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Transparent and Verifiable Results"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/feature2_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/clinton" />
+
+                    <TextView
+                        android:id="@+id/feature2_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our E-Voting system ensures transparent and verifiable election results. Each vote is recorded and stored securely, making it tamper-proof. Our robust auditing system allows for easy verification of results, promoting trust and confidence in the electoral process."
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Feature 3 -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="16dp">
+
+                    <TextView
+                        android:id="@+id/feature3_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:text="Inclusive and Accessible Voting"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/feature3_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:paddingBottom="8dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/donald" />
+
+                    <TextView
+                        android:id="@+id/feature3_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Our E-Voting app is designed to be inclusive and accessible for all voters. We provide support for different languages and accessibility features, ensuring that every eligible voter can exercise their democratic right. Join us in making democracy more inclusive and accessible than ever before."
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <!-- Footer -->
+                <TextView
+                    android:id="@+id/footer_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:paddingTop="16dp"
+                    android:text="© 2022 E-Voting App. All rights reserved."
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+        </ScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
